@@ -1,4 +1,4 @@
-# 🚀 Interesting Programs Hacktoberfest 2024 🎃
+# 🚀 Interesting Programs Hacktoberfest 2024 🦥
 
 Welcome to the **Interesting Programs Hacktoberfest 2024** repository! 👨‍💻👩‍💻
 
