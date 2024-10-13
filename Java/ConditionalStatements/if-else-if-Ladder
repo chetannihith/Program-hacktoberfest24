@@ -1,0 +1,20 @@
+public class IfElseIfLadder {
+    public static void main(String[] args) {
+        int marks = 75; // Declare an integer variable and assign it a value of 75.
+
+        // Check the range of marks to determine the grade.
+        if (marks >= 90) {
+            // If marks are 90 or above, print Grade A.
+            System.out.println("Grade: A");
+        } else if (marks >= 75) {
+            // If marks are between 75 and 89, print Grade B.
+            System.out.println("Grade: B");
+        } else if (marks >= 50) {
+            // If marks are between 50 and 74, print Grade C.
+            System.out.println("Grade: C");
+        } else {
+            // If marks are below 50, print Grade F (fail).
+            System.out.println("Grade: F");
+        }
+    }
+}
