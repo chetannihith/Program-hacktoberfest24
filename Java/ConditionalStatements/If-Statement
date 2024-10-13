@@ -1,0 +1,13 @@
+public class IfStatement {
+    public static void main(String[] args) {
+        int number = 5;
+
+        // If the number is greater than 0, print the message.
+        if (number > 0) {
+            System.out.println("The number is positive.");
+        }
+
+        // Code continues even if the condition is false.
+        System.out.println("End of program.");
+    }
+}
