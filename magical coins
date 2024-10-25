@@ -1,0 +1,61 @@
+In a magical land, the currency is based on certain 𝑑𝑒𝑛𝑜𝑚𝑖𝑛𝑎𝑡𝑖𝑜𝑛𝑠
+. These 𝑑𝑒𝑛𝑜𝑚𝑖𝑛𝑎𝑡𝑖𝑜𝑛𝑠
+ (coins) are of the order 11,111,1111,11111,...
+ and so on.
+
+Gopal has bought an item, determine if it is possible for him to pay with the help of these coins.
+
+He can use any coin 𝑎𝑛𝑦
+ number of times.
+
+Input
+The input consists of multiple test cases.
+
+The first line contains a single integer 𝑡
+ (1≤𝑡≤104
+) — The number of test cases.
+
+Each test case 𝑡
+ contains a single integer 𝑛
+ (1≤𝑛≤109
+) — Cost of the item.
+
+Output
+For each test case, output YES if it is possible to pay, otherwise output NO.
+
+Example
+InputCopy
+3
+33
+144
+69
+OutputCopy
+YES
+YES
+NO
+Note
+For 𝑛=33
+, Gopal can use three coins of 11
+ ,so the output is YES.
+
+For 𝑛=144
+, Gopal can use one 𝐜𝐨𝐢𝐧
+ of 111
+ and three coins of 11
+ to make 144, so the output is YES.
+
+For 𝑛=69
+, no combination is possible, so the output is NO.
+
+#code:
+
+t = int(input())
+for j in range(t):
+    n = int(input())    
+    for i in range(n // 111 + 1):
+        remain = n - i * 111
+        if remain >= 0 and remain % 11 == 0:
+            print("YES")
+            break    
+    else:
+        print("NO")
